@@ -1,4 +1,4 @@
-<!-- Homework Assingment: JavaScript Assignment Option Two: Hangman Game (Challenge - Recommended) -->
+
 
 <!DOCTYPE html>
 <html>
@@ -7,35 +7,34 @@
 	<meta charset="utf-8">
 	<title>Bob's Burger Hangman</title>
 
-	<!-- Linking Normalize.css -->
+	
 	<link rel="stylesheet" type="text/css" href="Norm-hangman.css">
 
-	<!-- Setting the Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- BOOTSTRAP 3: Latest compiled and minified CSS -->
+	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<!-- Linking my own CSS -->
+	
 	<link rel="stylesheet" type="text/css" href="Hangman.css">
 
 </head>
 <body>
-<div class="container"> <!-- container -->
+<div class="container">
 
-	<div class="row"> <!-- row -->
+	<div class="row"> 
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- column -->
 
-			<!-- TITLE -->
+			
 			<img src="belchers.jpg" alt="Belcher Family" class="center-block img-responsive" id="title">
 
 		</div>
 	</div>
 
-	<div class="row"> <!-- row -->
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- column -->
+	<div class="row"> 
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
 
-			<!-- Instructions of the game -->
+			
 			<div class="text-center" id="gameInstructions">
 				<p>Press any key to get started!</p>
 			</div>
@@ -46,13 +45,13 @@
                 <p> Then, I'll take your order </p>
 			</div>
 
-		</div> <!-- column -->
-	</div> <!-- row -->
+		</div> 
+	</div> 
 
 
-	<div class="row" id="gamecontainer"> <!-- row 1 -->
+	<div class="row" id="gamecontainer"> 
 
-		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="leftColumn"> <!-- column left-->
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="leftColumn"> 
 			<div class="row">
 				<div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="geneImg">
 					<img src="gene.jpeg" alt="Gene" class="center-block img-responsive" ><p class="text-center names">Gene</p>
@@ -82,16 +81,16 @@
 					<img src="linda.jpg" alt="Chief Hopper" class="center-block img-responsive" id="lindaImg"><p class="text-center names"> To pass, what's her name?</p>
 				</div>
 			</div>			
-		</div> <!-- column left-->
+		</div> 
 
 
-		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="rightColumn"> <!-- column right-->
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="rightColumn"> 
 
 
 			<div class="row"> <!-- row -->
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="currentWord"> <!-- column -->
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="currentWord"> 
 
-					<!-- CURRENT WORD TO BE GUESSED -->
+					
 						<div >
 							<h3>CURRENT WORD</h3>
 						</div>
@@ -99,28 +98,28 @@
 							<h2 id="theWord">   </h2>
 						</div>
 
-				</div> <!-- column -->
-			</div> <!-- row -->
+				</div> 
+			</div> 
 
 
-			<div class="row"> <!-- row -->
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- column -->
+			<div class="row"> 
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
 
-					<!-- Game Stats -->
-						<div class="row" id="winLose"> <!-- row -->
+					
+						<div class="row" id="winLose"> 
 
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> <!-- column -->
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">  
 								<div >
 									<h4 id="wins">Wins:  </h4>
 								</div>
-							</div> <!-- column -->
+							</div> 
 
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> <!-- column -->
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
 								<div >
 									<h4 id="losses">Losses:  </h4>
 								</div>
-							</div> <!-- column -->							
-						</div> <!-- row -->
+							</div> 						
+						</div> 
 
 
 						<div>
@@ -130,11 +129,11 @@
 						<div>
 							<h4 id="guessedLetters">Letters Already Guessed:  </h4>
 						</div>
-				</div> <!-- column -->
-			</div> <!-- row -->
+				</div> 
+			</div> 
 	
 
-		</div> <!-- column right-->
+		</div> 
 			
 	<div class="row">
 		<div class="col-xs-12">
@@ -149,9 +148,8 @@
 	</div>
 			
 
-</div> <!-- container -->
+</div> 
 
-<!-- Linking my own JAVASCRIPT -->
 <script type="text/javascript" src="Hangman.js"></script>
 
 </body>
