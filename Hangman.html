@@ -5,25 +5,19 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Stranger Hangman</title>
+	<title>Bob's Burger Hangman</title>
 
 	<!-- Linking Normalize.css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="Norm-hangman.css">
 
 	<!-- Setting the Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- BOOTSTRAP 3: Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<!-- Linking my own CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-	<!-- Linking Google Web Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Hangman.css">
 
 </head>
 <body>
@@ -33,7 +27,7 @@
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- column -->
 
 			<!-- TITLE -->
-			<img src="assets/images/strangerHangmanTitle.png" alt="Stranger Hangman" class="center-block img-responsive" id="title">
+			<img src="belchers.jpg" alt="Belcher Family" class="center-block img-responsive" id="title">
 
 		</div>
 	</div>
@@ -47,43 +41,45 @@
 			</div>
 
 			<div class="text-center">
-				<p>Try to guess the current word. Do it before the all your friends are sent to the Upside Down!</p>
+                <p>Try to guess the words on the menu. Do it, or my Kid's said they'd do something to you if you didn't.</p>
+                <p> What they'll do, I literlly have no idea.....</p>
+                <p> Then, I'll take your order </p>
 			</div>
 
 		</div> <!-- column -->
 	</div> <!-- row -->
 
 
-	<div class="row" id="gameContainer"> <!-- row 1 -->
+	<div class="row" id="gamecontainer"> <!-- row 1 -->
 
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="leftColumn"> <!-- column left-->
 			<div class="row">
-				<div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="elevenImg">
-					<img src="assets/images/eleven.png" alt="Eleven" class="center-block img-responsive" ><p class="text-center names">ELEVEN</p>
+				<div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="geneImg">
+					<img src="gene.jpeg" alt="Gene" class="center-block img-responsive" ><p class="text-center names">Gene</p>
 				</div>
-				<div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="mikeImg">
-					<img src="assets/images/mike.png" alt="Mike" class="center-block img-responsive"><p class="text-center names">MIKE</p>
+				<div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="louiseImg">
+					<img src="louise.jpg" alt="Louise" class="center-block img-responsive"><p class="text-center names">Louise</p>
 				</div>
-				<div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="willImg">
-					<img src="assets/images/will.png" alt="Will" class="center-block img-responsive"><p class="text-center names">WILL</p>
+				<div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="tinaImg">
+					<img src="tina.gif" alt="Tina *twerking" class="center-block img-responsive"><p class="text-center names">Tina</p>
 				</div>
-				<div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="dustinImg">
-					<img src="assets/images/dusty.png" alt="Dusty" class="center-block img-responsive"><p class="text-center names">DUSTIN</p>
+				<div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="burgerImg">
+					<img src="burger.jpg" alt="Burgers" class="center-block img-responsive"><p class="text-center names">Menu</p>
 				</div>
 			</div>	
 
 			<div class="row">
 				<div class="col-xs-3 col-sm-3 col-md-6">
-					<img src="assets/images/lucas.png" alt="Lucas" class="center-block img-responsive" id="lucasImg"><p class="text-center names">LUCAS</p>
+					<img src="cheese.jpg" alt="Lucas" class="center-block img-responsive" id="cheeseImg"><p class="text-center names"> The finest of Cheeses</p>
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-6">
-					<img src="assets/images/madMax.png" alt="Mad Max" class="center-block img-responsive" id="madMaxImg"><p class="text-center names">MAD MAX</p>
+					<img src="drink.jpg" alt="Drink" class="center-block img-responsive" id="drinkImag"><p class="text-center names">Drink</p>
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-6">
-					<img src="assets/images/steve.png" alt="Steve" class="center-block img-responsive" id="steveImg"><p class="text-center names">STEVE</p>
+					<img src="lobster.jpg" alt="Lobster" class="center-block img-responsive" id="lobsterImg"><p class="text-center names">Lobster</p>
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-6">
-					<img src="assets/images/chiefHopper.png" alt="Chief Hopper" class="center-block img-responsive" id="chiefHopperImg"><p class="text-center names">CHIEF HOPPER</p>
+					<img src="linda.jpg" alt="Chief Hopper" class="center-block img-responsive" id="lindaImg"><p class="text-center names"> To pass, what's her name?</p>
 				</div>
 			</div>			
 		</div> <!-- column left-->
@@ -145,7 +141,7 @@
 			
 			<div class="text-center">
 				<audio controls autoplay id="song">
- 					<source src="assets/sounds/strangerThings.mp3" type="audio/mpeg">
+ 					<iframe src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A0T70JhaoVEmwokY7MbOVzW" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>" type="audio/mpeg">
  				</audio>
 			</div>
 
@@ -156,7 +152,7 @@
 </div> <!-- container -->
 
 <!-- Linking my own JAVASCRIPT -->
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+<script type="text/javascript" src="Hangman.js"></script>
 
 </body>
 </html>
